@@ -1,0 +1,6 @@
+.slider-container div {
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
