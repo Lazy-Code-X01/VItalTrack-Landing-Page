@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Typography, styled, Button } from '@mui/material';
+import DemoButton from '../../components/demo-button';
 
 const HeroWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -157,7 +158,7 @@ function HeroSection() {
               <img src="/assets/images/JPG&PNG/apple.svg" alt="apple" style={{ width: '30px', height: '30px' }} />
               <img src="/assets/images/JPG&PNG/linux.svg" alt="linux" style={{ width: '30px', height: '30px' }} />
             </ContentWrapperThree>
-            <ButtonWrapper>Request a demo</ButtonWrapper>
+            <DemoButton />
           </ContentWrapperTwo>
           <ArrowWrapper>
             <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
