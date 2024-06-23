@@ -6,6 +6,7 @@ import ThirdSection from '../sections/LandingThirdSection';
 import FourthSection from '../sections/LandingFourthSection';
 import SimpleSlider from '../sections/TestimonialSection/carousel';
 import TrySoftware from '../sections/LandingSixthSection';
+import Footer from '../sections/Footer';
 
 
 
@@ -26,6 +27,7 @@ function LandingPage() {
       <FourthSection />
       <SimpleSlider />
       <TrySoftware />
+      <Footer />
     </Wrapper>
   );
 }

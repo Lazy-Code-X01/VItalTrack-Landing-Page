@@ -28,6 +28,11 @@ const SubText = styled(Typography)(({ theme }) => ({
   width: '55%',
   textAlign: 'center',
   marginBottom: '20px',
+
+  [theme.breakpoints.down('md')] : {
+    width: '90%',
+    marginBottom: '50px',
+  }
 }));
 
 const OptionsWrapperHolder = styled(Box)(({ theme }) => ({
@@ -51,6 +56,7 @@ const OptionsWrapper = styled(Box)(({ theme }) => ({
 
   [theme.breakpoints.down('md')]: {
     // flexDirection: 'column',
+    width: '350px',
   },
 }));
 
