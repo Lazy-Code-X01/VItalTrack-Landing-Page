@@ -108,16 +108,7 @@ const SubText = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const ButtonWrapper = styled(Button)(({ theme }) => ({
-  color: '#fff',
-  background: '#844F93',
-  height: '40px',
-  width: '150px',
 
-  // [theme.breakpoints.down('sm')] : {
-  //   width: '100px'
-  // }
-}));
 
 const ArrowWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
