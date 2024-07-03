@@ -8,9 +8,12 @@ import {
   Box,
   Typography,
 } from "@mui/material";
+
 import CloseIcon from "@mui/icons-material/Close";
 import { useUIContext } from "../../context/ui";
 import SigninButton from "../signinButton";
+import { useState } from "react";
+import Contact from "../../pages/ContactPage";
 
 const DrawerCloseButton = styled(IconButton)(() => ({
   position: "absolute",
@@ -46,6 +49,15 @@ const ImageWrapper = styled("Img")(({ src, theme }) => ({
 function AppDrawer() {
   const { drawerOpen, setDrawerOpen } = useUIContext();
 
+  // const [showContact, setShowContact] = useUIContext();
+
+  // const TogglePage = () => {
+  //   // setShowContact(true)
+
+  //   console.log("Showing Contact Page");
+  // };
+
+
   return (
     <DrawerWrapper>
       {drawerOpen && (
@@ -68,8 +80,8 @@ function AppDrawer() {
           <ListItemButton>
             <ListItemText> Teams </ListItemText>
           </ListItemButton>
-          <ListItemButton>
-            <ListItemText> Products </ListItemText>
+            <ListItemButton Link to='contact'>
+            <ListItemText> Contact </ListItemText>
           </ListItemButton>
           <ListItemButton>
             <ListItemText> <SigninButton /> </ListItemText>

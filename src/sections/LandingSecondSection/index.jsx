@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { Box, Button, Styled, Typography } from '@mui/material';
 import React from 'react';
+import GetStartedButton from '../../components/getstarted-Button';
 
 const SectionWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -180,6 +181,7 @@ const ArrowWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
+
 function SecondSection() {
   return (
     <SectionWrapper>
@@ -193,6 +195,7 @@ function SecondSection() {
             Effortlessly oversee patient diagnoses with our Diagnosis Management feature. Streamline record-keeping,
             analysis, and tracking, empowering university clinics to provide precise and efficient healthcare services.
           </TextWrapper>
+        <GetStartedButton />
         </TextWrapperCover>
       </SubWrapper>
 

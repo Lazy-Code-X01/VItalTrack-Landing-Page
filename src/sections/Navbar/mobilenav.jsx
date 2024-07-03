@@ -1,7 +1,7 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, IconButton, Typography, styled } from "@mui/material";
-import { useUIContext } from "../../context/ui";
+import { UIProvider, useUIContext } from "../../context/ui";
 
 
 
@@ -41,8 +41,23 @@ const ImageWrapper = styled("Img")(({ src, theme }) => ({
   height: "50px",
 }));
 
+
 function MobileNavBar() {
-  const { setDrawerOpen } = useUIContext();
+  const uiContext = useUIContext();
+
+  // Check if uiContext is defined
+  if (!uiContext) {
+    console.error("UI context is undefined");
+    return null;
+  }
+
+  const { drawerOpen, setDrawerOpen } = uiContext;
+
+  // Check if setDrawerOpen is defined
+  if (!setDrawerOpen) {
+    console.error("setDrawerOpen is undefined");
+    return null;
+  }
 
   return (
     <Wrapper>
@@ -50,7 +65,7 @@ function MobileNavBar() {
         <ImageWrapper src="/assets/logo.svg" alt="logo" />
         <TextWrapper>VITAL TRACKS</TextWrapper>
       </SubSectionWrapper>
-      <IconButton onClick={() => setDrawerOpen(true)}>
+      <IconButton onClick={() => setDrawerOpen(!drawerOpen)}>
         <MenuIcon />
       </IconButton>
     </Wrapper>

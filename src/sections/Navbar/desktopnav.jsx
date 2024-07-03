@@ -2,6 +2,7 @@ import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Box, IconButton, Typography, styled } from "@mui/material";
 import SigninButton from "../../components/signinButton";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -52,15 +53,15 @@ function DesktopNavBar() {
       </SubSectionWrapper>
 
       <LinkSubSectionWrapper sx={{gap: "50px"}}>
-          <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>
           <TextWrapper sx={{ fontWeight: '300'}}>Features</TextWrapper>
-          </a>
-          <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
+          </Link>
+          <Link to="" style={{ textDecoration: 'none', color: 'inherit' }}>
           <TextWrapper sx={{ fontWeight: '300'}}>Team</TextWrapper>
-          </a>
-          <a href="#" style={{ textDecoration: 'none', color: 'inherit' }}>
+          </Link>
+          <Link to="/contact" style={{ textDecoration: 'none', color: 'inherit' }}>
           <TextWrapper sx={{ fontWeight: '300'}}>Contact</TextWrapper>
-          </a>
+          </Link>
         </LinkSubSectionWrapper>
 
         <SigninButton />

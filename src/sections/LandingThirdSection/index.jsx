@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import { Box, Button, Styled, Typography } from '@mui/material';
+import GetStartedButton from '../../components/getstarted-Button';
 
 const SectionWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -148,6 +149,14 @@ const TickTextWrapper = styled(Typography)(({ theme }) => ({
     },
   }));
 
+  // const CustomStyle = styled(Box)(({theme}) =>({
+  
+
+  //   [theme.breakpoints.down('md')] : {
+  //     marginLeft: '50px'
+  //   }
+  // }))
+
 function ThirdSection() {
   return (
     <SectionWrapper>
@@ -192,6 +201,7 @@ function ThirdSection() {
             access vital data, enhancing the efficiency and precision of university clinic operations for better student
             healthcare.
           </TextWrapper>
+          <GetStartedButton />
         </TextWrapperCover>
         <ImageWrapper src="/assets/images/JPG&PNG/Image1.png" />
       </SubWrapperTwo>

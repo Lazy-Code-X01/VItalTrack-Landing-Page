@@ -56,7 +56,7 @@ const OptionsWrapper = styled(Box)(({ theme }) => ({
 
   [theme.breakpoints.down('md')]: {
     // flexDirection: 'column',
-    width: '350px',
+    width: 'auto',
   },
 }));
 
@@ -65,16 +65,20 @@ const ImageWrapper = styled('Img')(({ src, theme }) => ({
   width: '50px',
   height: '50px',
 
-  // [theme.breakpoints.down('lg')] : {
-  //     width: '15px',
-  //     height: '15px'
-  // }
+  [theme.breakpoints.down('md')] : {
+      width: '30px',
+      height: '30px'
+  }
 }));
 
 const OptionsText = styled(Typography)(({ theme }) => ({
   color: '#fff',
   width: '100%',
   textAlign: 'left',
+
+  [theme.breakpoints.down('md')] : {
+    width:'80%',
+  }
 }));
 
 const OptionsTextWrapper = styled(Box)(({ theme }) => ({

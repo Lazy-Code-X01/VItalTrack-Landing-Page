@@ -15,11 +15,13 @@ const HeroWrapper = styled(Box)(({ theme }) => ({
     flexDirection: 'column',
     backgroundSize: '100%',
     height: 'auto',
+    marginLeft: '0'
   },
 
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',
-    backgroundImage: 'none',
+    backgroundImage: 'none',    
+    marginLeft: '3rem'
   },
 }));
 
