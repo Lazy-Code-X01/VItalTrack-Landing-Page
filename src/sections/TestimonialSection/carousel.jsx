@@ -121,13 +121,7 @@ function Responsive() {
           </div>
         </CardHolder>
       </SectionWrapper>
-      <ArrowWrapper sx={{ marginLeft: "25%" }}>
-        <img
-          src="/assets/images/JPG&PNG/Arrow 2.png"
-          alt="arrow"
-          style={{ width: "20px", height: "70px" }}
-        />
-      </ArrowWrapper>
+
     </div>
   );
 }

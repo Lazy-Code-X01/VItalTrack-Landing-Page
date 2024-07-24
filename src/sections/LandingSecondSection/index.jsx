@@ -172,14 +172,14 @@ const BoxText = styled(Typography)(({ theme }) => ({
   },
 }));
 
-const ArrowWrapper = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  marginTop: '10px',
+// const ArrowWrapper = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   marginTop: '10px',
 
-  [theme.breakpoints.down('md')]: {
-    display: 'none',
-  },
-}));
+//   [theme.breakpoints.down('md')]: {
+//     display: 'none',
+//   },
+// }));
 
 
 function SecondSection() {
@@ -199,9 +199,9 @@ function SecondSection() {
         </TextWrapperCover>
       </SubWrapper>
 
-      <ArrowWrapper sx={{ marginLeft: '70%' }}>
+      {/* <ArrowWrapper sx={{ marginLeft: '70%' }}>
         <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
 
       <SubWrapperTwo>
         <TextWrapperCoverTwo>
@@ -230,9 +230,9 @@ function SecondSection() {
         <ImageWrapper src="/assets/images/JPG&PNG/Image2.png" />
       </SubWrapperTwo>
 
-      <ArrowWrapper sx={{ marginLeft: '-45%' }}>
+      {/* <ArrowWrapper sx={{ marginLeft: '-45%' }}>
         <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
     </SectionWrapper>
   );
 }

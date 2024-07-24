@@ -98,14 +98,14 @@ const TextWrapperCover = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ArrowWrapper = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  marginTop: '10px',
+// const ArrowWrapper = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   marginTop: '10px',
 
-  [theme.breakpoints.down('md')]: {
-    display: 'none',
-  },
-}));
+//   [theme.breakpoints.down('md')]: {
+//     display: 'none',
+//   },
+// }));
 
 const SubTextWrapper = styled(Box)(({ theme }) => ({
   display: 'flex',
@@ -187,9 +187,9 @@ function ThirdSection() {
         </TextWrapperCover>
       </SubWrapper>
 
-      <ArrowWrapper sx={{ marginLeft: '70%' }}>
+      {/* <ArrowWrapper sx={{ marginLeft: '70%' }}>
         <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
 
       <SubWrapperTwo>
         <TextWrapperCover>
@@ -206,9 +206,9 @@ function ThirdSection() {
         <ImageWrapper src="/assets/images/JPG&PNG/Image1.png" />
       </SubWrapperTwo>
 
-      <ArrowWrapper sx={{ marginLeft: '-50%' }}>
+      {/* <ArrowWrapper sx={{ marginLeft: '-50%' }}>
         <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
     </SectionWrapper>
   );
 }

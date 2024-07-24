@@ -112,15 +112,15 @@ const SubText = styled(Typography)(({ theme }) => ({
 
 
 
-const ArrowWrapper = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  marginLeft: '45px',
-  marginTop: '10px',
+// const ArrowWrapper = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   marginLeft: '45px',
+//   marginTop: '10px',
 
-  [theme.breakpoints.down('sm')]: {
-    display: 'none',
-  },
-}));
+//   [theme.breakpoints.down('sm')]: {
+//     display: 'none',
+//   },
+// }));
 
 const ImageWrapper = styled('Img')(({ src, theme }) => ({
   src: `url(${src})`,
@@ -153,19 +153,19 @@ function HeroSection() {
             </ContentWrapperThree>
             <DemoButton />
           </ContentWrapperTwo>
-          <ArrowWrapper>
+          {/* <ArrowWrapper>
             <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-          </ArrowWrapper>
+          </ArrowWrapper> */}
         </ContentWrapperOne>
       </ContentWrapper>
       <ImageWrapper src="/assets/images/JPG&PNG/UsersLogos.png" alt="users-logos" />
-      <ArrowWrapper
+      {/* <ArrowWrapper
         sx={{
           marginLeft: '70%',
         }}
       >
         <img src="/assets/images/JPG&PNG/Arrow 2.png" alt="arrow" style={{ width: '20px', height: '70px' }} />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
     </HeroWrapper>
   );
 }

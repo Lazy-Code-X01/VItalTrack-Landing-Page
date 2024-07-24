@@ -77,14 +77,14 @@ const BodyText = styled(Typography)(({ theme }) => ({
   width: "70%",
 }));
 
-const ArrowWrapper = styled(Box)(({ theme }) => ({
-  display: "flex",
-  marginTop: "10px",
+// const ArrowWrapper = styled(Box)(({ theme }) => ({
+//   display: "flex",
+//   marginTop: "10px",
 
-  [theme.breakpoints.down("md")]: {
-    display: "none",
-  },
-}));
+//   [theme.breakpoints.down("md")]: {
+//     display: "none",
+//   },
+// }));
 
 const customStyle = {
   transform: "rotate(4.041deg)",
@@ -110,13 +110,13 @@ function TrySoftware() {
           </BodyText>
         </TiltedSection>
       </SectionWrapper>
-      <ArrowWrapper sx={{ marginLeft: "85%" }}>
+      {/* <ArrowWrapper sx={{ marginLeft: "85%" }}>
         <img
           src="/assets/images/JPG&PNG/Arrow 2.png"
           alt="arrow"
           style={{ width: "20px", height: "70px" }}
         />
-      </ArrowWrapper>
+      </ArrowWrapper> */}
     </div>
   );
 }
